@@ -1,0 +1,22 @@
+{
+  "name": "rest-project",
+  "version": "1.0.0",
+  "description": "RESTful apiproject using Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhicoding/REST-project.git"
+  },
+  "author": "Abhishek Shingane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhicoding/REST-project/issues"
+  },
+  "homepage": "https://github.com/Abhicoding/REST-project#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
