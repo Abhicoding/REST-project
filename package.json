@@ -4,7 +4,8 @@
   "description": "RESTful apiproject using Nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/Abhicoding/REST-project#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "rethinkdb": "^2.3.3",
+    "rethinkdbdash": "^2.3.31"
   }
 }
