@@ -9,15 +9,22 @@ exports.insertPlayer = (req, res) => {
 }
 
 exports.getPlayer = (req, res) => {
-  const id = req.params.id
-  console.log('player id in controller', id)
+  const id = parseInt(req.params.id)
+  console.log('player id in controller', typeof id)
   playerModel.get(id).then(result => res.status(200).json(result))
 }
 
 exports.removePlayer = (req, res) => {
-  const id = req.params.id
+  const id = parseInt(req.params.id)
   console.log('removing player id', id)
   playerModel.remove(id).then(result => res.status(200).json(result))
+}
+
+exports.editPlayer = (req, res) => {
+  const id = parseInt(req.params.id)
+  const obj = req.body
+  console.log('editing player id:', id, obj)
+  playerModel.edit(id, obj).then(result => res.status(200).json(result))
 }
 
 exports.swapi = (req, res) => {
