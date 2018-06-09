@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Abhicoding/REST-project#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "node-fetch": "^2.1.2",
     "nodemon": "^1.17.5",
