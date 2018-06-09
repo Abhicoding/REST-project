@@ -1,9 +1,10 @@
-const http = require('http')
+const fetch = require('node-fetch')
 
-http.get({
-    hostname: 'localhost',
-    port: 80,
-    path: '/',
-    agent: false  // create a new agent just for this one request
-  }, (res) => 
-)
+exports.pull = (peopleNum) => {
+  return fetch('https://swapi.co/api/people/' + peopleNum)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+      return data
+    })
+}

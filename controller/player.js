@@ -10,6 +10,7 @@ exports.player = (req, res) => {
   res.status(200).json(data)
 }
 
-exports.swapi= (req, res) => {
-  
+exports.swapi = (req, res) => {
+  playerService.pull(req.params.peopleNum)
+    .then(result => res.status(200).json(result))
 }

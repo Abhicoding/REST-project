@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Abhicoding/REST-project#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "node-fetch": "^2.1.2",
     "nodemon": "^1.17.5",
     "rethinkdb": "^2.3.3",
     "rethinkdbdash": "^2.3.31"
